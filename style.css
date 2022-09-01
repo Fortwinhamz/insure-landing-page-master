@@ -98,7 +98,13 @@
   font-size: 1.5rem;
   background-color: transparent;
   color: #fff;
+  transition: all 0.5s ease-in-out;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.main-header .header-text button:hover {
+  color: hsl(256deg, 26%, 20%);
+  background-color: #fff;
 }
 .main-header .header-img {
   position: relative;
@@ -106,6 +112,38 @@
 }
 .main-header .header-img img {
   width: 90%;
+}
+
+.difference {
+  padding: 10% 15%;
+}
+.difference h2 {
+  font-size: 3rem;
+  color: hsl(256deg, 26%, 20%);
+}
+.difference .rows {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.difference .rows .row1 {
+  text-align: left;
+  padding: 1.4rem 2rem;
+  margin: 2rem;
+  width: 100%;
+}
+.difference .rows .row1 h3 {
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+  color: hsl(256deg, 26%, 20%);
+  font-weight: 700;
+}
+.difference .rows .row1 p {
+  font-size: 1.325rem;
+  color: hsla(276deg, 4%, 51%, 0.815);
+}
+.difference .rows .row1 img {
+  width: 20%;
 }
 
 @media only screen and (max-width: 768px) {

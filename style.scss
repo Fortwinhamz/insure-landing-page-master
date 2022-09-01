@@ -125,7 +125,14 @@
 			font-size: 1.5rem;
 			background-color: transparent;
 			color: $color-white;
+			transition: all .5s ease-in-out;
 			text-transform: uppercase;
+			cursor: pointer;
+
+			&:hover{
+				color: $color-Dark-Violet;
+				background-color: $color-white;
+			}
 		}
 	}
 
@@ -138,11 +145,46 @@
 			width: 90%;
 		}
 	}
-
-	
 }
 
 
+.difference{
+	padding: 10% 15%;
+
+	h2{
+		font-size: 3rem;
+		color: $color-Dark-Violet;
+	}
+	
+	.rows{
+		margin: 3rem 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		.row1{
+			text-align: left;
+			// border: 3px solid red;
+			padding: 1.4rem 2rem;
+			margin: 2rem;
+			width:100%;
+			h3{
+				margin: 1.5rem 0;
+				font-size: 1.8rem;
+				color: $color-Dark-Violet;
+				font-weight: 700;
+			}
+
+			p{
+				font-size: 1.325rem;
+				color: $color-Dark-Grayish-Violet;
+			}
+
+			img{
+				width: 20%;
+			}
+		}
+	}
+}
 
 
 
