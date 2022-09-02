@@ -149,7 +149,7 @@
 
 
 .difference{
-	padding: 10% 15%;
+	padding: 10% 15% 3%;
 
 	h2{
 		font-size: 3rem;
@@ -165,7 +165,7 @@
 			text-align: left;
 			// border: 3px solid red;
 			padding: 1.4rem 2rem;
-			margin: 2rem;
+			margin: 2rem 0;
 			width:100%;
 			h3{
 				margin: 1.5rem 0;
@@ -187,10 +187,91 @@
 }
 
 
+.how-we-work{
+	margin: 3rem 15%;
+	background-color: $color-Dark-Violet;
+	display: flex;
+	justify-content: space-between;
+	padding: 5rem;
+	background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	align-items: center;
 
+	h2{
+		font-size: 4rem;
+		color: $color-white;
+		width: 42%;
+	}
 
+	button{
+		padding: 1rem 3rem;
+		border: 1px solid $color-white;
+		font-size: 1.5rem;
+		background-color: transparent;
+		color: $color-white;
+		transition: all .5s ease-in-out;
+		text-transform: uppercase;
+		cursor: pointer;
 
+		&:hover{
+			color: $color-Dark-Violet;
+			background-color: $color-white;
+		}
+	}
+}
+.main-footer{
+	padding: 3rem 15%;
+	display: flex;
+	flex-direction: column;
+	background-color: $color-Very-Light-Gray;
+	background-image: url(./images/bg-pattern-footer-desktop.svg);
+	background-position: left;
+	background-repeat: no-repeat;
+	// padding: 0 3rem;
 
+	span{
+		width: 100%;
+		background-color:$color-Dark-Grayish-Violet;
+		height: 1px;
+		margin: 0 0 2rem 0;
+	}
+	.top{
+		display: flex;
+		justify-content: space-between;
+		margin: 2rem 0;
+		align-items: center;
+
+		.socials{
+			i{
+				padding: 0 0.5rem;
+				font-size: 2rem;
+				color: $color-Dark-Grayish-Violet;
+			}
+			
+		}
+	}
+
+	.bottom{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		text-transform: uppercase;
+		line-height: 3rem;
+
+		.lists{
+			ul{
+				color: $color-Dark-Violet;
+				font-weight: 600;
+				letter-spacing: .1rem;
+			}
+
+			.one{
+				padding: 2rem 0;
+				color: $color-Dark-Grayish-Violet;
+			}
+		}
+	}
+}
 
 
 
@@ -259,7 +340,7 @@
 		  text-align: center;
 		  transition: 0.3s;
 		  color: #fff;
-  
+		  background-color: $color-Dark-Violet;
 		  &.active{
 				left: 0;
 		  }
@@ -308,5 +389,17 @@
 		  }
 		}
   
+	}
+}
+
+@media only screen and (max-width: 425px){
+	header{
+		flex-direction: column-reverse;
+
+		
+		.header-img img{
+			width: 100%;
+			// position: absolute;
+		}
 	}
 }
