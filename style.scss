@@ -329,6 +329,7 @@
 @media only screen and (max-width:768px){
 	.navbar{
 		width: 100%;
+		padding: 1.875rem 5%;
 		
 		.nav-menu{
   
@@ -341,6 +342,7 @@
 		  transition: 0.3s;
 		  color: #fff;
 		  background-color: $color-Dark-Violet;
+		  z-index: 1;
 		  &.active{
 				left: 0;
 		  }
@@ -363,6 +365,7 @@
 				background: none;
 				color: #fff;
 				word-spacing: 1rem;
+				margin-bottom: 6rem;
 			}
 		}
   
@@ -390,16 +393,189 @@
 		}
   
 	}
+
+
+	.main-header{
+		padding: 1.875rem 5%;
+
+		.header-text{
+			width: 100%;
+
+			span{
+				display: none;
+			}
+
+			h1{
+				font-size: 5rem;
+			}
+		}
+		.header-img img{
+				width: 50%;
+		}
+		
+	}
+
+
+	.difference{
+		padding: 1.875rem 5%;
+		margin-top: 10%;
+	}
+
+	.how-we-work{
+		margin: 3rem 5%;
+	}
+
+	.main-footer{
+		padding: 3rem 5%;
+	}
 }
 
-@media only screen and (max-width: 425px){
-	header{
-		flex-direction: column-reverse;
 
-		
-		.header-img img{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px){
+	.main-header{
+		flex-direction: column-reverse;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+
+
+		.header-text{
 			width: 100%;
-			// position: absolute;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			padding: 4rem;
+
+			h1{
+				font-size: 4rem;
+				width: 70%;
+			}
+
+			p{
+				width: 70%;
+			}
+		}
+		
+
+		.header-img{
+			top: 0;
+			margin-bottom: 10rem;
+			width: 100%;
+
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	.difference{
+		text-align: center;
+
+		.rows{
+			display: flex;
+			flex-direction: column;
+			
+			.row1{
+				text-align: center;
+
+				h3{
+					font-size: 2.5rem;
+				}
+
+				p{
+					font-size: 1.5rem;
+				}
+
+				img{
+					width: 30%;
+				}
+			}
+		}
+	}
+
+	.how-we-work{
+		flex-direction: column;
+		padding: 1rem;
+		text-align: center;
+		margin: 2rem;
+
+		h2{
+			width: 100%;
+		}
+
+		button{
+			margin: 4rem;
+		}
+	}
+
+	.main-footer{
+
+		justify-content: center;
+		.top{
+			flex-direction: column;
+			justify-content: center;
+			.socials{
+				margin-top: 4rem;
+			}
+		}
+
+		.bottom{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
 		}
 	}
 }

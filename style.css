@@ -222,6 +222,7 @@
 @media only screen and (max-width: 768px) {
   .navbar {
     width: 100%;
+    padding: 1.875rem 5%;
   }
   .navbar .nav-menu {
     flex-direction: column;
@@ -233,6 +234,7 @@
     transition: 0.3s;
     color: #fff;
     background-color: hsl(256deg, 26%, 20%);
+    z-index: 1;
   }
   .navbar .nav-menu.active {
     left: 0;
@@ -252,6 +254,7 @@
     background: none;
     color: #fff;
     word-spacing: 1rem;
+    margin-bottom: 6rem;
   }
   .navbar .hamburger {
     display: block;
@@ -266,12 +269,107 @@
   .navbar .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-}
-@media only screen and (max-width: 425px) {
-  header {
-    flex-direction: column-reverse;
+  .main-header {
+    padding: 1.875rem 5%;
   }
-  header .header-img img {
+  .main-header .header-text {
     width: 100%;
+  }
+  .main-header .header-text span {
+    display: none;
+  }
+  .main-header .header-text h1 {
+    font-size: 5rem;
+  }
+  .main-header .header-img img {
+    width: 50%;
+  }
+  .difference {
+    padding: 1.875rem 5%;
+    margin-top: 10%;
+  }
+  .how-we-work {
+    margin: 3rem 5%;
+  }
+  .main-footer {
+    padding: 3rem 5%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main-header {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .main-header .header-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+  }
+  .main-header .header-text h1 {
+    font-size: 4rem;
+    width: 70%;
+  }
+  .main-header .header-text p {
+    width: 70%;
+  }
+  .main-header .header-img {
+    top: 0;
+    margin-bottom: 10rem;
+    width: 100%;
+  }
+  .main-header .header-img img {
+    width: 100%;
+  }
+  .difference {
+    text-align: center;
+  }
+  .difference .rows {
+    display: flex;
+    flex-direction: column;
+  }
+  .difference .rows .row1 {
+    text-align: center;
+  }
+  .difference .rows .row1 h3 {
+    font-size: 2.5rem;
+  }
+  .difference .rows .row1 p {
+    font-size: 1.5rem;
+  }
+  .difference .rows .row1 img {
+    width: 30%;
+  }
+  .how-we-work {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem;
+  }
+  .how-we-work h2 {
+    width: 100%;
+  }
+  .how-we-work button {
+    margin: 4rem;
+  }
+  .main-footer {
+    justify-content: center;
+  }
+  .main-footer .top {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-footer .top .socials {
+    margin-top: 4rem;
+  }
+  .main-footer .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
